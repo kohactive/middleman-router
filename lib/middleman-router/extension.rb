@@ -4,6 +4,7 @@ require 'middleman-router/mapper'
 
 # TODO
 # -[ ] Auto reload the routes when they are updated
+# -[ ] Need ability to add `root_path` which defaults to index.html
 # -[ ] index: false should work
 # -[ ] Refactor so "Router.path_name" is not required, only 'path_name'
 # -[ ] Ability to print out all routes, e.g. `rake routes`
