@@ -1,6 +1,13 @@
 # Require core library
 require 'middleman-core'
-require 'mapper'
+require 'middleman-router/mapper'
+
+# TODO
+# -[ ] Auto reload the routes when they are updated
+# -[ ] index: false should work
+# -[ ] Refactor so "Router.path_name" is not required, only 'path_name'
+# -[ ] Ability to print out all routes, e.g. `rake routes`
+# -[ ] Ability to add "/" at the end of each route
 
 # Extension namespace
 class Router < ::Middleman::Extension
@@ -9,7 +16,6 @@ class Router < ::Middleman::Extension
   @app = nil
 
   def initialize(app, options_hash={}, &block)
-    puts "loaded!"
     super
 
     @app = app

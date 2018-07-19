@@ -7,7 +7,7 @@ Gem::Specification.new do |s|
   s.platform    = Gem::Platform::RUBY
   s.authors     = ["John Koht"]
   s.email       = ["john@kohactive.com"]
-  # s.homepage    = "http://example.com"
+  s.homepage    = "http://example.com"
   s.summary     = %q{A simple router for Middleman projects}
   s.description = %q{A simple router for Middleman projets, inspired by the Rails router}
 

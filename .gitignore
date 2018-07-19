@@ -3,3 +3,6 @@
 
 # Ignore pkg folder
 /pkg
+
+/.ruby-version
+/.ruby-gemset

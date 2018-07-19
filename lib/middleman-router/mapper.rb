@@ -1,5 +1,4 @@
 class Mapper
-
   # A Resource class for a route. Basically just a way
   # to hold data for a route
   class Resource
