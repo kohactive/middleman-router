@@ -164,7 +164,7 @@ route :service, index: false do
 end
 ```
 
-This will avoid trying to match the url `/services` to `services/index.html`. This is useful wen you don't have index files for a subdirectory.
+This will avoid trying to match the url `/services` to `services/index.html`. This is useful when you don't have index files for a subdirectory.
 
 
 **query params**
