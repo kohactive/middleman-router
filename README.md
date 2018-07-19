@@ -1,7 +1,5 @@
 # Middleman Router
 
-middleman-robots is an extension of Middleman. This can create robots.txt.
-
 `middleman-router` is an extension of Middleman that provides an easy way to organize and manage all of your page routes.
 
 ## Install
