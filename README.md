@@ -167,6 +167,14 @@ end
 This will avoid trying to match the url `/services` to `services/index.html`. This is useful wen you don't have index files for a subdirectory.
 
 
+**query params**
+You can pass query params to any route like you do with the rails router. Simple pass the query key and value as a hash to the route.
+
+```ruby
+= link_to "Contact Us", contact_path(ref: "work", location: "header")
+#=> /contact?ref=work&location=header
+```
+
 ## Things to note
 
 One thing to note is that the index root needs to be setup like this:
