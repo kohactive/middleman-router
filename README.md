@@ -70,6 +70,18 @@ Once you've defined all of your routes in your routes file, you can easily call 
 
 When the site is compiled, it will render the URL from your route. If you change a route within your routes file then there is no need to change the route helper declaration unless you change the named route (e.g. you changed `route :about` to `route :about_us`.
 
+For nested routes, you'll need to use the parent named route as part of the path, e.g.:
+
+```ruby
+# lib/routes.rb
+route :about do
+  route :team
+end
+
+# html/erb file
+= link_to "Team", Router.team_about_path
+```
+
 ## Route Attributes
 
 Defining a `route` is the base for creating a new route. There are a few options you can pass to `route` to customize it.
